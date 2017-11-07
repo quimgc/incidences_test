@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "968a9666fdbcee77417cbe145f8d2a9e",
+    "content-hash": "ebb17b99ec126b0733843ef73061639e",
     "packages": [
         {
             "name": "acacha/admin-lte-template-laravel",
@@ -2407,6 +2407,66 @@
             "time": "2017-10-19T06:13:20+00:00"
         },
         {
+            "name": "quimgc/incidences",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../incidences",
+                "reference": "be17def233c585613e778f5f7e507ffac16184ab",
+                "shasum": null
+            },
+            "require": {
+                "php": "~5.6|~7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=5.4.3",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Quimgc\\Incidences\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Quimgc\\Incidences\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ],
+                "check-style": [
+                    "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+                ],
+                "fix-style": [
+                    "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Quim Gonzalez Colat",
+                    "email": "quimgonzalez@iesebre.com",
+                    "homepage": "https://github.com/quimgc",
+                    "role": "Developer"
+                }
+            ],
+            "homepage": "https://github.com/quimgc/incidences",
+            "keywords": [
+                "incidences",
+                "quimgc"
+            ]
+        },
+        {
             "name": "ramsey/uuid",
             "version": "3.7.1",
             "source": {
@@ -4321,7 +4381,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "quimgc/incidences": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

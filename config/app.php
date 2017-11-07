@@ -175,6 +175,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Quimgc\Incidences\Providers\IncidencesServiceProvider::class,
 
         /*
          * Application Service Providers...
